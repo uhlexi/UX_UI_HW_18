@@ -3,19 +3,42 @@
     }
 
 /* TEXT STYLES */
+@font-face {
+    font-family:'Manrope';
+    font-style: normal;
+    font-weight:400;
+    src: url(fonts/Manrope/Manrope-Regular);
+}
+
+@font-face {
+    font-family:'Manrope';
+    font-style: bold;
+    font-weight:700;
+    src: url(fonts/Manrope/Manrope-Bold);
+}
+
+@font-face {
+    font-family:'Manrope';
+    font-style: Extra-Bold;
+    font-weight:900;
+    src: url(fonts/Manrope/Manrope-ExtraBold);
+}
+
+
     body, html {
         margin: 0;
-        font-family: manrope-extrabold
-        font-weight: 900;
+        font-family: Manrope;
+        font-weight: 400;
         padding: 0;
         width: 100%;
         height: 100%;
-        color:#ffffff
+        color:#ffffff;
     }
 
     .section-header {
+        font-family: Manrope;
+        font-weight: 900;
         font-size:60px;
-        font-weight: 200;
         color:#ffffff;
         text-align: right;
         margin-right: 10%;
@@ -31,7 +54,6 @@
 
     .skillsheader {
         font-size: 30px;
-        font-weight:bold;
         color:#ffffff;
         text-align: center;
     }
@@ -290,7 +312,7 @@
         .background-container {
             position: relative;
             width: 100%;
-            height: 500px;
+            height: 550px;
             resize: both;
             background-image: url('../images/section.png');
             background-size:cover;
