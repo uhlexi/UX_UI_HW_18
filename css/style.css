@@ -247,6 +247,15 @@
         height: auto;
     }
 
+    .onefifthcolumn {
+        width: 20%;
+        float:left;
+        height: auto;
+        margin: 6%;
+        justify-content: center;
+    }
+
+    
 
 
 /* ASSETS */
@@ -329,7 +338,7 @@
         .text-row {
             width: 80%;
             margin-top: 75px;
-            font-size: 40px ;
+            font-size: xx-large ;
             font-weight: 400;
         }
 
