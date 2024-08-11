@@ -1,5 +1,6 @@
     body {
         background-color: #000000;
+        overflow-x: hidden;
     }
 
 /* TEXT STYLES */
@@ -273,10 +274,6 @@
         justify-content: center;
     }
 
-    div {
-        position: relative;
-    }
-
     .casestudy {
         width: 60%;
         float: left;
@@ -421,3 +418,7 @@
  section {
     display: grid;
  }
+
+ div {
+    position: relative;
+}
