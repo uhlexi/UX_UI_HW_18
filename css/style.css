@@ -64,6 +64,16 @@
         color:#ffffff;
     }
 
+    .verticaltext {
+        font-size: 40px;
+        font-weight: 100;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        position: absolute; 
+        bottom:0; 
+        left:0;
+    }
+
 /* HEADER & COMPONENTS*/
     .background-image {
         width: 100%;
@@ -72,12 +82,6 @@
         z-index: -1;
     }
 
-    .section-image {
-        width: 100%;
-        height: 150%;
-        background: url('../images/section.png') no-repeat center center/cover;
-        z-index: -1;
-    }
 
     .navbar {
         display: flex;
@@ -115,6 +119,9 @@
         transition: all 0.5s;
         cursor: pointer;
         margin: 5px;
+        position: absolute; 
+        bottom:0; 
+        left:0;
     }
   
     .button span {
@@ -198,6 +205,20 @@
         clear:both;
     }
 
+    .row3 {
+        width:90%;
+        margin:10%;
+        justify-content: center;
+        align-content: center;
+        display:flex;
+    }
+
+    .row3:after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+
     .aboutcolumnimg {
         float: left;
         width: 25%;
@@ -238,8 +259,6 @@
         float:left;
         height:auto;
         margin: 15px;
-        border-color: aqua;
-        border-style: solid;
     }
 
     .halfcolumn img {
@@ -251,10 +270,26 @@
         width: 20%;
         float:left;
         height: auto;
-        margin: 6%;
         justify-content: center;
     }
 
+    div {
+        position: relative;
+    }
+
+    .casestudy {
+        width: 60%;
+        float: left;
+        height: auto;
+    }
+
+    .casestudy img {
+        width: 100%;
+        height: auto;
+        justify-content: end;
+    }
+
+    .casestudy:nth-child(1)
     
 
 
@@ -321,13 +356,13 @@
         .background-container {
             position: relative;
             width: 100%;
-            height: 550px;
-            resize: both;
+            height: 100vh;
             background-image: url('../images/section.png');
-            background-size:cover;
-            background-position: center;
-            display: flex;
-            justify-content: first baseline;
+            background-size: contain; 
+            background-repeat: no-repeat;  
+            background-position: top;
+            display:flex;
+            justify-content: first-baseline;
             align-items: center;
             color: white;
             text-align: center;
@@ -341,7 +376,48 @@
             font-size: xx-large ;
             font-weight: 400;
         }
+        @media screen and (max-width: 600px) {
+            .text-row {
+              font-size: 20px;
+            }
+          }
 
 
 
-       
+ .hidden-left {
+    opacity:0;
+    filter: blur(20px);
+    transform: translateX(-100%);
+    transition: all 2s;
+ }      
+
+ .hidden-right {
+    opacity:0;
+    filter: blur(20px);
+    transform: translateX(+100%);
+    transition: all 2s;
+ }  
+
+ .hidden-y {
+    opacity:0;
+    filter: blur(40px);
+    transform: translateY(-100);
+    transition: all 2s;
+ }  
+
+
+ .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+ }
+
+ .show-y {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+ }
+
+ section {
+    display: grid;
+ }

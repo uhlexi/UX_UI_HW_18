@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Navigation Bar Overlay</title>
         <link rel="stylesheet" href="css/style.css"> 
+        <script defer src="scripts/app.js"></script>
         <div class="background-image"></div>
         <div class="navbar">
             <a href="#about">ABOUT</a>
@@ -26,16 +27,16 @@
         <!--About Me Section-->
         <section id=about>
             <div class="row2">
-                <div class="onethirdcolumn">
+                <div class="onethirdcolumn hidden-left">
                     <span><br><br>
                         Design is more than just appearances. Guiding user interactions and experiences is an important aspect of development. As a UX/UI designer, I value understanding both user and client needs to develop intuitive interfaces that meet the needs of both groups.<br><br>
                         I achieve my goals through user research and collaboration with developers, stakeholders, and project managers. </span><br><br>
                         <button class="button"><span>View Resume </span></button>
                 </div>
-                <div class="onethirdcolumnimg">
+                <div class="onethirdcolumnimg hidden-y">
                     <img style="width: 100%; height:100%; resize: both;" src="images/headshot.png" alt="Image of Alexi.">
                 </div>
-                <div class="onethirdcolumn" style="text-align: right;">
+                <div class="onethirdcolumn hidden-right" style="text-align: right;">
                     <span><br><br>
                         <b>Education & Certifications</b><br><br>
                         University of Minnesota, B.A. in English<br>
@@ -54,7 +55,8 @@
         <section id="skills">
             <div class="section-header">Skills & Tools</div>
             <div class="background-container">
-                <div class="text-row">
+                <div><br><br></div>
+                <div class="text-row hidden-y">
                     <div style="width: 22%; float: left;"><br></div>
                     <div style="width: 20%; float: left;">User flows</div>
                     <div style="width: 16%; float: left;"><br></div>
@@ -63,76 +65,78 @@
                     <div style="width: 30%; float: left;">User research</div>
                     <div style="width: 40%; float: left;">Usabiity testing</div>
                     <div style="width: 30%; float: left;">Prototyping</div>
+                    <hr class="invisable">
+                        <div class="onefifthcolumn">
+                            <img style="width: 25%; height:25%; resize: both;" src="images/microsoft.png" alt="Microsoft Office">
+                        </div>
+                        <div class="onefifthcolumn">
+                            <img style="width: 25%; height:25%; resize: both;" src="images/google.png" alt="Google Suite">
+                        </div>
+                        <div class="onefifthcolumn">
+                            <img style="width: 25%; height:25%; resize: both;" src="images/figma.png" alt="Figma">
+                        </div>
+                        <div class="onefifthcolumn">
+                            <img style="width: 25%; height:25%; resize: both;" src="images/adobe.png" alt="Adobe">
+                        </div>
+                        <div class="onefifthcolumn">
+                            <img style="width: 25%; height:25%; resize: both;" src="images/procreate.png" alt="Procreate">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row 2">
-                <div class="onefifthcolumn">
-                    <img style="width: 25%; height:25%; resize: both;" src="images/microsoft.png" alt="Microsoft Office">
-                </div>
-                <div class="onefifthcolumn">
-                    <img style="width: 25%; height:25%; resize: both;" src="images/google.png" alt="Google Suite">
-                </div>
-            </div>
-
-
-
-
-
-           <div class="row2">
-                <div class="center">
-                <p style="color:#ffffff; font-weight:100"><b>TOOLS:</b> Figma, Adobe Creative Cloud, Microsoft Suite, Google Suite, Procreate<br>
-                <b>SKILLS:</b> Interviewing, card sorting, data analysis, heuristic analysis, prototyping</p>
-                </div>
-           </div>
-        </section>
         <hr class="invisable">
+
+
+        <!--Case Studies Section-->
         <section id="work">
-            <h1 class="section-header">CASE STUDIES</h1>
-            <div class="row1">
-                <div class="casecolumn">
-                    <img src="images/bb.png" alt="Image of BorderBuddy mobile screens.">
+            <h1 class="section-header" style="text-align: left; margin-left: 5%;">Case Studies</h1>
+            <div class="row3" style="margin:0">
+                <div class="casestudy img hidden-left">
+                    <img src="images/borderbuddy.png">
                 </div>
-                <div class="casecolumn">
-                   <p class="caseheader">
-                    MOBILE PROTOTYPE<br>
-                    <b>BORDER BUDDY</b>
-                   </p>
-                   <p>
-                    BorderBuddy is a mobile app designed to streamline international travel planning.
-                   </p>
-                   <button class="button"><span>View Case Study </span></button>
+                <div class="onefifthcolumn hidden-right">
+                    <h2 class="verticaltext" style="position: absolute; bottom:0; left:0;">
+                        Mobile Prototype<br> 
+                        <b>Border Buddy</b>
+                    </h2>
+                </div>
+                <div class="onefifthcolumn hidden-right">
+                    <button class="button" style="margin-top: 280%"><span>View Case Study </span></button>
                 </div>
             </div>
-            <hr class="invisable">
-            <div class="row1">
-                <div class="casecolumn">
-                   <p class="caseheader">
-                    DESKTOP PROTOTYPE<br>
-                    <b>NATIONAL WEATHER SERVICE (NWS)</b>
-                   </p>
-                   <p>
-                    The NWS navigation was confusing and duplicative. An entire website redesign was conducted to improve style and usability.
-                   </p>
-                   <button class="button"><span>View Case Study </span></button>
-                </div>
-                <div class="casecolumn">
-                    <img src="images/nws.png" alt="Image of National Weather Service desktop homepage.">
-                </div>
-            <hr class="invisable">
-            <div class="casecolumn">
-                <img src="images/w3b.png" alt="Image of Wee3Beasties desktop screen.">
+
+        <hr class="invisable">    
+        <div class="row3">
+            <div class="onefifthcolumn hidden-left">
+                <button class="button"><span>View Case Study </span></button>
             </div>
-            <div class="casecolumn">
-               <p class="caseheader">
-                DESKTOP PROTOTYPE<br>
-                <b>WEE3BEASTIES</b>
-               </p>
-               <p>
-                Wee3Beasties is a non-profit cat adoption agency. Stakeholders were interested in pushing for donations while users wanted additional cat care information. A redesign was conducted to address both needs.
-               </p>
-               <button class="button"><span>View Case Study </span></button>
+            <div class="onefifthcolumn hidden-left">
+                <h2 class="verticaltext">
+                    Desktop Prototype<br> 
+                    <b>National Weather Service</b>
+                </h2>
+            </div>
+            <div class="casestudy img hidden-right">
+                <img src="images/nws.png">
             </div>
         </div>
+
+
+        <div class="row3" style="margin:0">
+            <div class="casestudy img hidden-left">
+                <img src="images/wee3beasties.png">
+            </div>
+            <div class="onefifthcolumn hidden-right">
+                <h2 class="verticaltext">
+                    Desktop Prototype<br> 
+                    <b>Wee3Beasties</b>
+                </h2>
+            </div>
+            <div class="onefifthcolumn hidden-right">
+                <button class="button"><span>View Case Study </span></button>
+            </div>
+        </div>
+
         </section>
         <hr class="invisable">
     </body>
